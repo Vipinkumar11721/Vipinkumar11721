@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>User Registration Form</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            margin: 0; 
+            padding: 0; 
+        } 
+        .container { 
+            width: 50%; 
+            margin: 50px auto; 
+            padding: 20px; 
+            background-color: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        } 
+        h2 { 
+            text-align: center; 
+            color: #333; 
+        } 
+        label { 
+            display: block; 
+            margin: 10px 0 5px; 
+            color: #333; 
+        } 
+        input[type="text"], input[type="email"], input[type="date"], input[type="tel"], textarea { 
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        } 
+        input[type="radio"], input[type="checkbox"] { 
+            margin-right: 10px; 
+        } 
+        .form-group { 
+            margin-bottom: 15px; 
+        } 
+        .gender-group { 
+            display: inline-block; 
+        } 
+        .btn { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+        } 
+        .btn:hover { 
+            background-color: #45a049; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+<div class="container"> 
+    <h2>User Registration Form</h2> 
+    <form action="#" method="post"> 
+        <!-- User Name --> 
+        <div class="form-group"> 
+            <label for="username">User Name:</label> 
+            <input type="text" id="username" name="username" required> 
+        </div> 
+ 
+        <!-- Date of Birth --> 
+        <div class="form-group"> 
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" id="dob" name="dob" required> 
+        </div> 
+ 
+        <!-- User Address --> 
+        <div class="form-group"> 
+            <label for="address">Address:</label> 
+            <textarea id="address" name="address" rows="4" required></textarea> 
+        </div> 
+ 
+        <!-- Gender --> 
+        <div class="form-group gender-group"> 
+            <label>Gender:</label> 
+            <input type="radio" id="male" name="gender" value="Male" required> 
+            <label for="male">Male</label> 
+            <input type="radio" id="female" name="gender" value="Female"> 
+            <label for="female">Female</label> 
+            <input type="radio" id="other" name="gender" value="Other"> 
+            <label for="other">Other</label> 
+        </div> 
+ 
+        <!-- User Email --> 
+        <div class="form-group"> 
+            <label for="email">Email ID:</label> 
+            <input type="email" id="email" name="email" required> 
+        </div> 
+ 
+        <!-- Mobile Number --> 
+        <div class="form-group"> 
+            <label for="mobile">Mobile Number:</label> 
+type="tel" 
+id="mobile" 
+name="mobile" pattern="[0-9]{10}" required 
+<input 
+placeholder="1234567890"> 
+</div> 
+<!-- Submit Button --> 
+<div class="form-group"> 
+<button type="submit" class="btn">Register</button> 
+</div> 
+</form> 
+</div> 
+</body> 
+</html> 
